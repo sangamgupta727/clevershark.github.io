@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Clever Shark |Service</title>
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!-- Fav Icon -->
+<link rel="icon" href="images/favicon.png" type="images/x-icon">
+
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<!-- owl-css -->
+<link rel="stylesheet" type="text/css" href="css/owl.css">
+
+
+<!-- flaticon css -->
+<link rel="stylesheet" type="text/css" href="css/flaticon.css">
+
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Sora:wght@600&display=swap" rel="stylesheet">
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<!-- wow-css -->
+<link rel="stylesheet" type="text/css" href="./css/wow.css">
+
+<style>
+
+
+
+.nxt-para {
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+    position: relative;
+    right: 9px;
+    padding: 0px 35px;
+    /* margin: 0; */
+    /* padding: 0; */
+    top: 24px;
+}
+
+
+.nxt-para-2 {
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+    position: relative;
+    right: 9px;
+    padding: 0px 30px;
+    /* margin: 0; */
+    /* padding: 0; */
+    top: 24px;
+}
+
+
+.nxt-para-3 {
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+    position: relative;
+    right: 9px;
+    padding: 0px 30px;
+    /* margin: 0; */
+    /* padding: 0; */
+    top: 24px;
+}
+
+
+
+
+
+.letterDrop {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    /* word-spacing: 18px !important; */
+    /* text-transform: uppercase; */
+    /* letter-spacing: 0.5em; */
+    opacity: 0.8;
+    transform: rotateX(-90deg);
+    animation: letterDrop 0.4s ease-in-out 1 normal forwards;
+    animation-iteration-count: 1
+  }
+
+
+
+@keyframes letterDrop {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0.8;
+        top: 3.75em;
+        transform: rotateX(-360deg);
+    }
+    100% {
+        opacity: 1;
+        top: 4.50em;
+        transform: rotateX(360deg);
+    }
+}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+  
+    <!-- Preloader -->
+    <div class="preloader"></div>
+    
+    
+    <!-- modal -->
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <div class="main-modal">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="
+       border: 1px solid;
+    letter-spacing: 1px;
+    font-size: 16px;
+        background-color:#2773b;
+    color: #fff;
+">Let's get started</button>
+    <!--
+    <i class="fa fa-envelope" aria-hidden="true" style="float: right;
+    position: relative;
+    transform: rotate(89deg);
+    margin-top: -6%;
+    right: -1px !important;"></i>-->
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+    <div class="modal-content"> 
+        <!-- Modal Header -->
+        <div class="modal-header" style="position: relative;background-color: #0d2933;"> <img src="images/logo-4.png" title="logo" class="center-logo text-center">
+        <div class="border-9"></div>
+        <img src="images/fin-new.gif" class="gif-6">
+          <button type="button" class="close text-white" data-dismiss="modal">×</button>
+        </div>
+      
+        <span id="form-success-text"></span> 
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form method="post" class="form-1 p-t-20 needs-validation" novalidate="" name="lets-connect" id="lets-connect">
+            <input type="hidden" name="_token" value="OG6qIpzEToPBpar187v4XLatWH26TDb2bF5tHh0N">
+            <div class="form-group">
+              <label class="label-text">Your Name *</label>
+              <input type="text" name="name" id="name" class="form-control-6" placeholder="Name">
+              <span class="small-icon"><i class="fa fa-user" aria-hidden="true"></i> </span></div>
+            <div class="form-group">
+              <label class="label-text">Your Email*</label>
+              <input type="text" name="email" id="email" class="form-control-6" placeholder="Email">
+              <span class="small-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+              <label class="label-text">Your Phone Number *</label>
+              <input type="text" name="phone" id="phone" class="form-control-6" placeholder="Phone No">
+              <span class="small-icon-1"><i class="fa fa-mobile" aria-hidden="true"></i></span> </div>
+            <button type="submit" class="center-button mx-auto my-2" name="GetStarted" style="cursor:pointer;">
+            <a>Get Started</a>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+  <!--end-->
+         <!-- Main Header-->
+    <header class="main-header header-style-one">
+      <!--Header-Upper-->
+        <div class="header-upper">
+          <div class="auto-container">
+              <div class="clearfix">
+                  
+                  <div class="pull-left logo-box">
+                      <div class="logo"><a href="index.html"><img src="images/logo-4.png" alt="" title="Aplink" class="head-logo"></a>
+                      
+                      </div>
+                    </div>
+                    
+                    <div class="nav-outer clearfix">
+            <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler"><span class="icon"><i class="fa fa-bars" aria-hidden="true"></i></span></div>
+            <!-- Main Menu -->
+            <nav class="main-menu show navbar-expand-md">
+              <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+
+              <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                <ul class="navigation clearfix">
+                  <li class="current dropdown"> <a href="index.html" class="active">Home</a>
+                   
+                  </li>
+                  
+                  <li class="dropdown"><a href="index.html">Service</a>
+                   
+                  </li>
+                  
+                  <li class="dropdown"><a href="index.html">How it works</a></li>
+                
+                  <li class="dropdown"><a href="index.html">Testimonials</a>
+                   
+                  </li>
+                                    <li class="dropdown"> <a href="index.html" >Contact</a>
+                                    </li>
+                </ul>
+              </div>
+              
+            </nav>
+            
+           <!-- 
+           <div class="outer-box">
+               Cart Box 
+              <div class="cart-box">
+                <a href="cart.html" class="icon flaticon-shopping-bag-3"></a>
+              </div>
+             Search Box
+              <div class="searched-popup search-box-outer">
+                <button class="search-box-btn"><span class="flaticon-magnifying-glass-1"><i class="fa fa-search" aria-hidden="true"></i></span></button>
+              </div>
+             
+            </div>-->
+            
+          </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+    <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon flaticon-multiply"><i class="fa fa-times" aria-hidden="true"></i></span></div>
+            
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index.html">
+                    <img src="images/logo-4.png" alt="" title=""></a></div>
+                <div class="menu-outer">
+          <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+        </div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+    
+    </header>
+    <!--End Main Header -->
+  
+  <!-- Banner Section -->
+    <section class="banner-section-2"> 
+      <div class="container">
+        <div class="row">
+          
+        </div>
+      </div>
+   
+  </section>
+  <!--End Banner Section-->
+
+
+
+  <!-- services-->
+  <section class="main-top" style="background-color: rgb(251 251 249);">
+              <div class="container">
+              <div class="row">
+                <div class="col-md-12 mt-3 text-center">
+                  <h2 class="top-head">
+ Shark Services</h2>
+ <div class="border-7"></div>
+   <img src="images/fin-new.gif" class="gif-5">
+                
+                </div><!--12-->
+                  <div class="col-lg-6 col-md-6 col-12 mt-5 text-center">
+                    <div class="single-services" style="height: 463px;">
+              <img src="images/mobile-app.png" class="center-img" title="Gamin App development"> <h4 class="center-w">Gaming App Development</h4>
+                         <div class="side-content-a">
+                      <p class="unique">Mobile games represent one of the most popular and profitable segments of the mobile app market.
+They regularly top the most-downloaded app charts on mobile marketplaces and can possess millions of active users. It's an incredibly diverse sector, ranging from multi-billion-dollar grossing 3D games to non-
+profit educational experiences. We not only help you with understanding your Game plan, following design and implementation but do offer you an ongoing support plan customized to your requirements.
+                       </p>
+                      </div><!--side-contewnt-->
+                 </div>
+                </div><!--4-->
+                  <div class="col-lg-6 col-md-6 col-12 mt-5 text-center">
+                    <div class="single-services" style="height: 463px;">
+               <img src="images/mobile-app-1.png" class="center-img" title="Mobile-App"> <h4 class="center-w">Mobile App Development</h4>
+                         <div class="side-content-a">
+                     <p class="unique">Our high end mobile app development services
+We offer a full cycle of application design, integration and management services.
+Whether it is a consumer oriented app or a transformative enterprise solution, the
+company leads the entire mobile app development process from concept to
+app delivery, and to ongoing support.
+
+We are expert in iOS, Android, Native and cross-platform app development . We also do UI/UX design consulting, prototyping Automated QA, testing power management,  geofencing Embedded Android, AOSP customizations maintenance and post-warranty support.
+
+                       </p>
+                      </div><!--side-contewnt-->
+                 </div>
+                </div><!--4-->
+                  <div class="col-lg-6 col-md-6 col-12 mt-5 text-center">
+                    <div class="single-services" style="height: 463px;">
+               <img src="images/web.png" class="center-img" title="web-developemnent"> <h4 class="center-w">Web development</h4>
+                         <div class="side-content-a">
+                     <p class="unique">Whether you are looking for a beautiful marketing site or a custom web-based software application, we
+have you covered with our high-quality web development services.
+
+We prototype, design, build and launch digital experiences for all devices (mobile and desktop) and
+aspect ratios.
+
+Our team utilizes the latest technology, including Laravel-based REST API and full stack JavaScript, to
+build websites that attract, engage, and convert your particular audience.
+                       </p>
+                      </div><!--side-contewnt-->
+                 </div>
+                </div><!--4-->
+
+
+
+ <div class="col-lg-6 col-md-6 col-12 mt-5 text-center">
+                    <div class="single-services">
+              <img src="images/support.png"  class="center-img" title="web-support-services"> <h4 class="center-w">Web Support Services</h4>
+                         <div class="side-content-a">
+                     <p class="unique">Digital marketing
+Our range of digital marketing services spans across SEO, SEM, display advertising, social
+media and email marketing. Whatever your goal, we'll discover the right solution for your
+business.
+CMS
+Content Management Systems (CMS) is a type of software that allows anyone to
+create, manage, or update a webpage. Common CMS include WordPress and
+Joomla. There is a lot of variety in using a CMS for your webpage. Some companies
+like to build their own system, whereas others may design a webpage that fits a
+
+template provided by WordPress. Design firms can also create completely custom web
+pages that use WordPress as the framework.<span id="dots">...</span><span id="more">
+We find that using WordPress and Joomla is best for our clients. These two systems
+are simple yet powerful and easy to navigate. While this software is user-friendly, it
+takes time to get familiar with its inner-workings, techniques in setting up web pages,
+and SEO factors.
+Our knowledgeable staff is capable of tackling CMS for you. We would set up your
+website on a CMS, establish the main page structure, and manage additional features
+and SEO best practices. We build your site with self-management in mind. So once
+your site is launched, we walk you through everything you would need to know to
+manage CMS on your own. We also tailor each CMS solution to your business to allow
+for expansion, flexibility, and ease of use.
+Website design is more than just appearance. To us, functionality is key.
+WEBSITE MAINTENANCE
+Along with our Content Management Systems (CMS) and Web Design services, Clever
+Shark also offers continual web support and website maintenance. While all our websites are
+designed for you to be able to manage them on your own, we understand that this can be
+time-consuming and difficult. We want to help. We are confident that our web maintenance
+service will have you and your team feeling at ease.
+Application Maintenance
+Application Maintenance covers critical security updates and patches to your website as new
+and updated versions of our open source solutions are introduced. This is an important
+element in maintaining the integrity of your website's security while maintaining usability,
+stability and performance. These services allow you to focus on your core business instead of
+worrying about application maintenance activities. Application Maintenance is required with
+all Hosting to ensure all websites are protected and secure.</span>
+<button onclick="myFunction()" id="myBtn" class="net-bn">Read more</button>
+                       </p>
+                      </div><!--side-contewnt-->
+                     
+                    
+                 </div>
+                </div><!--4-->
+
+
+
+
+
+              </div><!--row-->
+              </div><!--cont-->
+            </section>
+
+
+
+ <!-- Cpyright -->
+ <section class="footer" style="background-color: #2b2a2a;
+    padding: 5px 0px;
+    margin-top: -81px;">
+   <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-12">
+        <h2 class="text-btm" style="padding-top:16px;">&#169; Clever Shark All Rights Reserved.</h2>
+      </div>
+     
+   </div>
+   </div>
+ </section>
+ <!--End-->
+</div>
+<!--End pagewrapper-->
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+
+<!--Search Popup-->
+<div id="search-popup" class="search-popup">
+  <div class="close-search theme-btn"><span class="flaticon-multiply"><i class="fa fa-times" aria-hidden="true"></i></span></div>
+  <div class="popup-inner">
+    <div class="overlay-layer"></div>
+      <div class="search-form">
+          <form method="post" action="index.html">
+              <div class="form-group">
+                  <fieldset>
+                        <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                        <input type="submit" value="Search Now!" class="theme-btn">
+                    </fieldset>
+                </div>
+            </form>
+            
+            
+        
+        </div>
+        
+    </div>
+</div>
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
+<!-- testmonila -->
+<script src="https://use.fontawesome.com/1744f3f671.js"></script>
+<!-- end -->
+<script src="js/jquery.js"></script>
+<!--
+<script src="js/jquery-ui.js"></script>-->
+<script src="js/appear.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js-2/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.js"></script>
+
+<!--Master Slider-->
+<!--
+<script src="js/jquery.easing.min.js"></script>
+-->
+<script src="js/owl.js"></script>
+
+
+<script src="js/wow.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/script.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!-- form -->
+ 
+<!-- end -->
+
+<!-- btn-->
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+
+
+
+
+<!-- link active -->
+<script type="text/javascript">
+    $(document).ready(function(){
+  $('ul li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+});
+});
+</script>
+<!-- end -->
+
+
+
+</body>
+</html>
